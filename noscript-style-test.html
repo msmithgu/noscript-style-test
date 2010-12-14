@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:ctag="http://commontag.org/ns#"
+  lang="en"
+  dir="ltr"
+  version="XHTML+RDFa 1.0" >
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Noscript style test</title>
+    <style type="text/css">
+      body {
+        font-family: Arial;
+        font-size: 14px;
+      }
+      #testbox {
+        height: 96px;
+        width: 96px;
+        background: red;
+        border: 2px solid black;
+        float: left;
+        margin-right: 100px;
+      }
+      #testresults {
+        width: 400px;
+        margin-left: 200px;
+      }
+      #testresults h2 {
+        margin: 0;
+        padding: 0;
+        line-height: 1em;
+      }
+      .blue {
+        font-weight: bold;
+        color: blue;
+      }
+      .red {
+        font-weight: bold;
+        color: red;
+      }
+    </style>
+    <noscript>
+      <style type="text/css">
+        #testbox {
+          background: blue;
+        }
+      </style>
+    </noscript>
+  </head>
+
+  <body>
+    <h1>Noscript style test</h1>
+    <p>A box should appear below.  If script is allowed, it should be <span class="red">red</span>.  If not, it should be <span class="blue">blue</span>.</p>
+    <div id="testbox"></div>
+    <div id="testresults">
+      <h2><strong>Tested:</strong></h2>
+      <ul>
+        <li>Firefox</li>
+        <li>Chrome</li>
+        <li>Safari</li>
+        <li>IE 8 (in and out of compatibility mode)</li>
+        <li>IE 6</li>
+      </ul>
+    </div>
+  </body>
+</html>

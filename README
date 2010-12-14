@@ -1,0 +1,7 @@
+  When building html views with javascript, I often use styled-to-be-hidden,
+existing simple structure to create a fancy view.  In order to avoid
+strangeness at client loading time, I hide it using css.  However, people
+that have css enabled and javascript disabled won't be able to see anything.
+
+  So this is a test of an idea to put alternative styling in noscript tags
+and it appears to work in all the major browsers.
